@@ -1,4 +1,4 @@
-function getComputerChoice() {
+/* function getComputerChoice() {
   let randomVal = Math.random();
 
   if (randomVal <= 0.33) {
@@ -21,3 +21,4 @@ function getComputerChoice() {
     console.log(getUserChoice());
     
     
+*/
