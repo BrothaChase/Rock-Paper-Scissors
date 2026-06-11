@@ -10,15 +10,6 @@ function getComputerChoice() {
   }
 }
 
-function getUserChoice() {
-  let choice;
-  choice = window.prompt("Rock, Paper or Scissors?");
-  if (choice === null) {
-    return "rock"; //default choice if user cancels prompt
-  }
-  return choice.toLowerCase(); //allows for js to take any form of input ROCK, rOcK, sCISSORS,etc.
-}
-
 function playGame() {
   let humanScore = 0;
   let computerScore = 0;
@@ -55,12 +46,6 @@ function playGame() {
       ")"
     );
   }
-
-  /* playRound(getUserChoice(), getComputerChoice()); //after each round the user and computer functions is called again to play 5 rounds
-  playRound(getUserChoice(), getComputerChoice());
-  playRound(getUserChoice(), getComputerChoice());
-  playRound(getUserChoice(), getComputerChoice());
-  playRound(getUserChoice(), getComputerChoice()); // best of 5 games \ */
 
   const btn = document.querySelectorAll("button");
   const results = document.querySelector("#Results");
